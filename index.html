@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monster Fucker Bingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <h1 class="title">Monster Fucker Bingo</h1>
+
+    <div id="playerNameSection" class="card">
+        <input id="playerNameInput" placeholder="Enter your name">
+        <button class="btn" onclick="savePlayerName()">Save Name</button>
+    </div>
+
+    <h2 id="playerNameDisplay" class="subtitle"></h2>
+
+    <div id="board" class="grid"></div>
+
+    <div class="buttonGroup">
+        <button class="btn" onclick="showAddItem()">Add to List</button>
+        <button class="btn" onclick="showList()">Check List</button>
+        <button class="btn" onclick="voteRefresh()">Vote to Refresh Board</button>
+        <button class="btn" onclick="showPlayers()">Check Other Players Board</button>
+    </div>
+
+    <div id="voteInfo" class="voteInfo"></div>
+
+</div>
+
+<div id="dialogOverlay" class="overlay hidden">
+    <div id="dialogBox" class="dialog"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
