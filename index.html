@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Fucker Bingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="playerNameDisplay"></div>
+
+<div id="board" class="grid"></div>
+
+<div id="controls">
+    <button class="btn" onclick="showAddItem()">Add Item</button>
+    <button class="btn" onclick="showList()">Check List</button>
+    <button class="btn" onclick="voteRefresh()">Vote Refresh</button>
+    <button class="btn" onclick="showPlayers()">Check Other Boards</button>
+</div>
+
+<div id="voteInfo"></div>
+
+<div id="dialogOverlay" class="hidden">
+    <div id="dialogBox"></div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

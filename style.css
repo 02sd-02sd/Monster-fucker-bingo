@@ -1,0 +1,88 @@
+body {
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.square {
+    background: #444;
+    padding: 20px 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.square.marked {
+    background: #008000;
+}
+
+.btn {
+    background: #555;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dialogOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dialogOverlay.hidden {
+    display: none;
+}
+
+#dialogBox {
+    background: #333;
+    padding: 0;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#dialogHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #444;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#dialogClose {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 5px;
+}
+
+#dialogContent {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 18px;
+}
